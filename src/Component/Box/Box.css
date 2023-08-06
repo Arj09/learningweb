@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .box1{
+        width: 50vw;
+        height: 35vw;
+        justify-content: center;
+        margin: 2vw auto;
+        .heading{
+            font-size: 5vw;
+            padding: 2vw 4vw;
+            
+        }
+        .short{
+            color: orange;
+        }
+        .explorebtn{
+            width: 40%;
+            margin: 2vw 4vw;
+            padding: 1vw 2vw;
+            justify-content: center;
+            align-items: center;
+            font-weight: lighter;
+            font-size: 2vw;
+            cursor: pointer;
+            background-color: blue;
+            border: 0.2px solid blue;
+            color: white;
+        }
+        
+        
+    
+    }
+    .box2{
+        width: 50vw;
+        height: 35vw;
+      
+        
+    
+        
+    
+    }
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.centerHeading{
+    width: 90%;
+    font-size: 3vw;
+    border-bottom: 0.2px solid orange;
+    padding: 1vw;
+    margin: 2vw auto;
+
+}
+.cards{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw auto;
+    gap: 0.5vw;
+    .card{
+        border: 0.2px solid gray;
+        width: 20vw;
+        height: 25vw;
+       
+        .courseBg{
+            width: 100%;
+            height: 50%;
+            
+            margin-bottom: 1vw;
+            .courseImg{
+                width: 100%;
+                height: 100%
+            }
+        }
+        .courseName{
+            
+            text-align: center;
+            padding:  4vw auto;
+            font-size: 1.3vw;
+            
+            
+        }
+        .courseDes{
+            padding:  2.5vw auto;
+            font-size: 1vw;
+            text-align: center;
+
+        }
+        .coursePrice{
+            text-align: center;
+            padding:  2.5vw auto;
+            font-size: 1vw;
+            font-weight: 500;
+            
+            
+        }
+
+        .courseStart{
+            text-align: center;
+            padding:  2vw auto;
+            font-size: 1vw;
+            font-weight: 500;
+
+        }
+        .courseSellbtn{
+            width: 80%;
+            height: 4.2vh;
+            padding: 0;
+            margin-left: 2.2vw;
+            margin-top: 1vw;
+            cursor: pointer;
+            background-color: blue;
+            border: 0.2px solid blue;
+            color: white;
+            
+        }
+        
+        
+       
+       
+    }
+    .card:hover{
+        background-color: orange;
+        color: white;
+        border: 0.2px solid white;
+        transform: scale(1.1);
+    }
+}
+
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+   
+    .footerImg{
+        position: relative;
+        width: 100%;
+    }
+}
+
+.footer1{
+    top: 0;
+    position: absolute;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    margin: 2vw 4vw;
+    justify-content: space-evenly;
+   
+    
+  
+    .navlinks{
+        color: orange;
+        font-weight: 400;
+        list-style: none;
+        font-size: 1.4vw;
+        
+        .navlink{
+            color: white;
+            font-weight: 400;
+            font-size: 1.2vw;
+            cursor: pointer;
+
+        }
+        
+        
+    }
+}
+.main-footer{
+    text-align: center;
+    padding-left: 40vw;
+    position: absolute;
+    color: white;
+    font-size: 1.5vw;
+   
+    bottom: 2vh;
+
+}
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .container{
+        flex-direction: column;
+        .box1{
+            width: 100vw;
+            height: 30vw;
+
+        }
+        .box2{
+            width: 100vw;
+            height: 70vw;
+        }
+    }
+    .cards{
+        flex-direction: column;
+        .card{
+            width: 60vw;
+            height: 70vw;
+
+            .courseBg{
+                width: 100%;
+                height: 65%;
+                margin-bottom: 0.1vw;
+                .courseImg{
+                    width: 100%;
+                    height: 100%
+                }
+            }
+            .courseName{
+                font-size: 3vw;
+            }
+            .courseDes{
+                font-size: 2vw;
+            }
+            .coursePrice{
+               font-size: 2.5vw;
+            }
+            .courseStart{
+                
+                font-size: 2.5vw;
+
+            }
+            .courseSellbtn{
+                margin-left: 5vw;
+            }
+        }    
+    }
+    
+    .footer{
+        height: 70vh;
+
+    }
+    .footer1{
+        flex-direction: column;
+        .navlinks{
+            font-size: 3vw;
+            margin: 2vh 2vw;
+            .navlink{
+                font-size: 2.5vw;
+            }
+        }
+        
+    }
+    .main-footer{
+        font-size: 2.5vw;
+        padding: 2vw auto;
+    }
+    
+    
+}
