@@ -1,17 +1,21 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
+import { useNavigate } from 'react-router-dom';
 
 
 
 export const Navbar = ()=>{
     const [hide, setHide] = useState(false);
     const [currentUser, setCurrentUser] = useState("Un")
+    const navigate = useNavigate()
    
     const handlebtnSHow = ()=>{
         hide ? setHide(false) :setHide(true)
     }
 
     const handleLogout = ()=>{
+        navigate("/login")
+
         
        
        
